@@ -88,6 +88,7 @@ button{
     font-family: 'Assistant';
     font-weight: bold;
     border: 0;
+    cursor: pointer;
     background-color: #D3E10E;
     color: #011560;
 }
