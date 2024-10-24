@@ -115,7 +115,16 @@ input {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        position: static; 
-        margin: 0 auto;
+        position: absolute; 
+        top: 110px;
+        left: 40px;
+    }
+
+    .black-box h2{
+        font-size: 24px;
+    }
+
+    .black-box p{
+        font-size: 16px;
     }
 }
