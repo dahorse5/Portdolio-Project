@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* Navbar Styles */
 .navbar {
     background: linear-gradient(to right, #ffffff, #f1f1f1); 
@@ -68,7 +73,6 @@
 .navbar-collapse {
     justify-content: center;
 }
-
 
 /* Hero Section */
 .container-hero {

@@ -104,7 +104,7 @@ input {
         background-size: cover;
         display: flex;
         justify-content: center;
-        align-items: center; /* Center content vertically */
+        align-items: center; 
     }
 
     .black-box {
@@ -115,7 +115,7 @@ input {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        position: static; /* Remove absolute positioning */
-        margin: 0 auto; /* Center horizontally */
+        position: static; 
+        margin: 0 auto;
     }
 }

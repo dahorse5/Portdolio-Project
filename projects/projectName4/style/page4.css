@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Assistant', sans-serif;
+}
+
+/* Background Image Section */
 .background-img {
     width: 100vw;
-    height: 89vh;
-    background-image: url(/projects/projectName4/images/Path\ 15.png);
-    background-position: top;
+    height: 80vh;
+    background-image: url(/projects/projectName4/images/Path%2015.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -17,42 +22,41 @@
 }
 
 .upper-container {
-    width: 1176px;
-    height: 372px;
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
-h1 {
+.upper-container h1 {
     color: #D3E10E;
-    font-size: 83px;
-    font-family: 'Assistant';
+    font-size: 4rem;
     font-weight: bold;
 }
 
-p{
-    color: white;
-    font-family: 'Assistant';
-    font-size: 20px;
+.upper-container p {
+    color: #fff;
+    font-size: 1.2rem;
 }
 
-.lower-container{
-    width: 100vw;
-    height: 10vh;
-    margin-top: 3px;
+/* Lower Container */
+.lower-container {
+    width: 100%;
+    padding: 40px 0;
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
-    align-self: center;
+    align-items: center;
+    background: #fff;
 }
 
 .form {
-    width: 50vw;
     display: flex;
-    align-items: flex-end; 
     gap: 20px;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .form-control {
@@ -64,85 +68,105 @@ p{
 
 .form-control label {
     margin-bottom: 5px;
-    font-family: 'Assistant';
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
     color: #011560;
 }
 
 .form-control input {
     width: 300px;
     height: 40px;
-    border: 0;
+    border: none;
     border-bottom: 4px solid #D3E10E;
-    background: transparent;
     background-color: #F6F6F6;
+    padding: 5px;
 }
 
-button{
-    align-self: flex-end;
+.form-button {
     width: 160px;
     height: 40px;
-    margin-right: 25px;
-    font-size: 22px;
-    font-family: 'Assistant';
+    font-size: 1.2rem;
     font-weight: bold;
-    border: 0;
+    border: none;
     cursor: pointer;
     background-color: #D3E10E;
     color: #011560;
+    transition: background-color 0.3s, transform 0.2s ease, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px){
-    .background-img{
-        width: 100vw;
+.form-button:hover {
+    background-color: #b3cc00;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design for 1200px */
+@media (min-width: 1200px) {
+    .background-img {
+        height: 85vh;
+    }
+
+    .upper-container h1 {
+        font-size: 5rem;
+    }
+
+    .upper-container p {
+        font-size: 1.5rem;
+    }
+
+    .form-control input {
+        width: 350px;
+    }
+
+    .form-button {
+        width: 200px;
+    }
+}
+
+/* Responsive Design for 768px */
+@media (max-width: 768px) {
+    .background-img {
         height: 50vh;
         margin-bottom: 50px;
     }
 
-    .upper-container{
-        display: flex;
+    .upper-container {
+        text-align: center;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        padding: 10px;
     }
 
-    .upper-container h1{
-        font-size: 35px;
+    .upper-container h1 {
+        font-size: 2.5rem;
     }
 
-    .upper-container p{
+    .upper-container p {
         width: 70vw;
-        font-size: 15px;
+        font-size: 1rem;
     }
 
-    .lower-container{
+    .lower-container {
         width: 90vw;
         height: 35vh;
-        display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
 
-    .form{
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 10px;
+    .form {
+        flex-direction: column;
+        gap: 15px;
         width: 100%;
     }
 
-    .form-control input{
+    .form-control input {
+        width: 280px;
         background-color: #E5EEFF;
-        width: 300px;
     }
 
-    #email{
-        margin-bottom: 25px;
+    .form-button {
+        width: 280px;
     }
-    
-    button{
-        width: 300px;
-        margin: 0;
-    }
-
 }
