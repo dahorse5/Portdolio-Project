@@ -44,6 +44,7 @@ input {
 .container {
     display: flex;
     justify-content: center;
+    margin-right: 100px;
 }
 
 .iphone-img {
@@ -83,7 +84,7 @@ input {
 
 #message {
     height: 142px;
-    width: 855px;
+    width: 856px;
 }
 
 .contact-form button {
@@ -110,7 +111,6 @@ input {
     margin-right: 38px;
 }
 
-/* responsiveness for smaller screens */
 @media (max-width: 768px) {
     .top-bar {
         border: 18px solid #fdbd03;

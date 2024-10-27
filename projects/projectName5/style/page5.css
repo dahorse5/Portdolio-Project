@@ -74,24 +74,29 @@ body {
 }
 .form-control {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 15px;
   margin-top: 80px;
 }
 .form-control label {
+  width: 20%;
   font-size: 1rem;
   color: #0EE1DA;
   font-weight: bold;
   align-self: flex-start;
 }
 .form-control input {
+  width: 100%;
+  max-width: 500px;
   padding: 10px;
   border: none;
   border-bottom: 2px solid #0EE1DA;
   background-color: #E5EEFF;
 }
 .form-control button {
-  width: 36.5vw;
+  width: 100%;
+  max-width: 500px;
   padding: 10px;
   background-color: #0EE1DA;
   color: #020253;
